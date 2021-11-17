@@ -45,15 +45,15 @@ namespace Escola
         Console.Write("Deseja matricular um novo professor? (S/N) ");
         op = char.Parse(Console.ReadLine());
       } while (op != 'N');
-      /* op = 'S';
+      op = 'S';
       Console.WriteLine("---Adicionar Salas---");
       do
       {
         Console.WriteLine("Número da sala que deseja adicionar");
-        salas.Add(Console.Read());
-        Console.Write("Deseja adicionar uma nova sala? (S/N) ");
-        op = Convert.ToChar(Console.ReadLine());
-      } while (op != 'N'); */
+        salas.Add(int.Parse(Console.ReadLine()));
+        Console.WriteLine("Deseja adicionar uma nova sala? (S/N) ");
+        op = char.Parse(Console.ReadLine());
+      } while (op != 'N');
     }
     public void Listar()
     {
